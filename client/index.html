@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>city-game</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			html,
+			body {
+				overflow: hidden;
+			}
+
+			.webgl {
+				position: fixed;
+				top: 0;
+				left: 0;
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="libs/inflate.min.js"></script>
+		<script src="libs/FBXLoader.js"></script>
+		<script src="libs/OrbitControls.js"></script>
+		<script src="libs/Detector.js"></script>
+		<script src="libs/toon3d.js"></script>
+		<!-- <script src="index.js"></script> -->
+		<script src="game.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+				const game = new Game();
+			});
+		</script>
+		
+		<form id="msg-form">
+			<input id="m" type="text" autocomplete="false">
+			<button onclick="">Send</button>
+		</form>
+	</body>
+</html>
